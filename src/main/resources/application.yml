@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: spring-batch-processing-demo
+  datasource:
+    url: jdbc:mysql://localhost:3306/springBatchDemo
+    username: root
+    password: sourav12
+  jpa:
+    hibernate:
+      ddl-auto: update
+  batch:
+    jdbc:
+      initialize-schema: always
+    job:
+      enabled: false
